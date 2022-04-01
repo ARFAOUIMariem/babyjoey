@@ -2,13 +2,9 @@ package com.babyjoeyBackend.controller;
 
 import com.babyjoeyBackend.dto.ActivityCreationDto;
 import com.babyjoeyBackend.dto.ActivityDto;
-import com.babyjoeyBackend.dto.UserCreationDto;
 import com.babyjoeyBackend.dto.UserDto;
 import com.babyjoeyBackend.entity.ActivityEntity;
-import com.babyjoeyBackend.entity.UserEntity;
 import com.babyjoeyBackend.service.ActivityService;
-import com.babyjoeyBackend.service.ActivityServiceImpl;
-import com.babyjoeyBackend.service.UserService;
 import lombok.NoArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -118,10 +114,6 @@ public class ActivityController {
         activityService.deleteActivity(id);
         ;
         return HttpStatus.FORBIDDEN;
-    }
-
-
-}
-
+    }}
 
 
