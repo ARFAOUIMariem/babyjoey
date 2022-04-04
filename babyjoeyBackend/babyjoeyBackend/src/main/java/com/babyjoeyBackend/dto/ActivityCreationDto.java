@@ -26,7 +26,6 @@ public class ActivityCreationDto {
     }
 
 
-
     public String getMessage() {
         return message;
     }
@@ -47,7 +46,7 @@ public class ActivityCreationDto {
         public RepasDto() {
         }
 
-        public RepasDto(Integer id_repas,String nom,String description,String image) {
+        public RepasDto(Integer id_repas, String nom, String description, String image) {
             this.id_repas = id_repas;
             this.nom = nom;
             this.description = description;
@@ -88,32 +87,4 @@ public class ActivityCreationDto {
         }
     }
 
-    public static class RepasCreationDto {
-        private RepasEntity repas;
-
-
-        private String message;
-
-        public RepasCreationDto(RepasEntity repas,String message ) {
-            this.repas = repas;
-            this.message=message;
-        }
-
-        public RepasEntity getRepas() {
-            return repas;
-        }
-
-        public void setRepas(RepasEntity repas) {
-            this.repas = repas;
-        }
-
-        public String getMessage() {
-            return message;
-        }
-
-        public void setMessage(String message) {
-            this.message = message;
-        }
-    }
 }
-
